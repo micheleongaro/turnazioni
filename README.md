@@ -7,6 +7,10 @@ Calendario turni del reparto Operation.
 
 I turni sono cifrati (AES-256-GCM, chiave derivata dalla password con PBKDF2-SHA256): senza password il sito non mostra nomi né turni. Il repository contiene solo pagine cifrate, mai il file Excel.
 
+## Scheda Reperibilità
+
+La scheda legge `reperibilita.json` (cifrato con la password del sito). Il file si genera dalla pagina privata di gestione della reperibilità (sezione "PDF e pubblicazione") e si carica qui con **Add file → Upload files**, come `index.html`.
+
 ## Come aggiornare il sito
 
 1. Apri il file Excel dei turni (quello con il foglio **Dati**) in Excel, controlla che sia aggiornato e **salvalo**.
